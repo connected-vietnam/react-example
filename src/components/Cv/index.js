@@ -131,8 +131,8 @@ const Cv = () => (
   <div className="mw8 center">
     <div className="bg-dark-gray flex flex-column pa3 pa4-l">
       <div className="f3 f2-l ba bw2 b--gold center ph3 pv2 white-80 ttu tc">Your Name</div>
-      <div className="white-60 center ma2">Web Designer / Developer</div>
-      <div className="white-60 center ma2 flex flex-wrap tc">
+      <div className="white-60 tc ma2">Web Designer / Developer</div>
+      <div className="white-60 tc ma2 flex flex-wrap">
         {[info.phone, info.email, info.website, info.address].map((item, idx) => (
           <div key={item} className={cn('ph3 pv1 w-100 w-auto-l', { 'br-l b--light-gray-l': idx < 3 })}>{item}</div>
         ))}
