@@ -185,7 +185,7 @@ const Notes = ({ items, className }: {
 }) => (
   <div>
     {items.map((item, idx) => (
-      <div className={cn('pv2', { 'bb b--light-gray': idx < items.length - 1 })}>
+      <div key={item.title} className={cn('pv2', { 'bb b--light-gray': idx < items.length - 1 })}>
         <div className="white-80 f6 mb1">
           {item.title}
         </div>
